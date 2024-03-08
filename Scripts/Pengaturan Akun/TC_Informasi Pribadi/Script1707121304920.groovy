@@ -17,15 +17,35 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Button mulai'), 0)
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/icon akun'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login Object/field number inactive'), 0)
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/tab pengaturan akun'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Login Object/field phone active'), '81217171662', 0)
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/tab informasi pribadi'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/button ubah informasi pribadi'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/tap nama belakang'), 0)
+
+Mobile.clearText(findTestObject('Object Repository/Pengaturan Akun Object/clear text nama belakang'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/tap nama belakang (1)'), 0)
+
+Mobile.setText(findTestObject(''), 'Priansyah', 0)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Button Lanjut verif'), 0)
+Mobile.tap(findTestObject(''), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Icon Whatsapp'), 0)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/button simpan tanggal lahir'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/button simpan informasi personal'), 0)
+
+Mobile.pressBack()
+
+Mobile.pressBack()
+
+Mobile.pressBack()
 

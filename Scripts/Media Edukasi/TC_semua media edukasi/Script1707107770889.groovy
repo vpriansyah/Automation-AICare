@@ -17,15 +17,42 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Button mulai'), 0)
+Mobile.tap(findTestObject('Object Repository/Media Edukasi Object/icon Edukasi'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login Object/field number inactive'), 0)
+Mobile.tap(findTestObject('Object Repository/Media Edukasi Object/tap search'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Login Object/field phone active'), '81217171662', 0)
+Mobile.setText(findTestObject('Object Repository/Media Edukasi Object/set text search'), 'jantung', 0)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Button Lanjut verif'), 0)
+Mobile.tap(findTestObject('Object Repository/Media Edukasi Object/tap first article'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Icon Whatsapp'), 0)
+'Get Device Height and Store in device_height variable'
+device_Height = Mobile.getDeviceHeight()
+
+'Get Width Height and Store in device_Width variable'
+device_Width = Mobile.getDeviceWidth()
+
+'Storing the startX value by dividing device width by 2. Because x coordinates are constant for Vertical Swiping'
+int startX = device_Width / 2
+
+'Here startX and endX values are equal for vertical Swiping for that assigning startX value to endX'
+int endX = startX
+
+'Storing the startY value'
+int startY = device_Height * 0.30
+
+'Storing the endY value'
+int endY = device_Height * 0.70
+
+'Swipe Vertical from top to bottom'
+Mobile.swipe(startX, endY, endX, startY)
+
+Mobile.tap(findTestObject('Object Repository/Media Edukasi Object/button Scroll up'), 0)
+
+Mobile.pressBack()
+
+Mobile.tap(findTestObject('Media Edukasi Object/Button X search'), 0)
+
+Mobile.pressBack()
 

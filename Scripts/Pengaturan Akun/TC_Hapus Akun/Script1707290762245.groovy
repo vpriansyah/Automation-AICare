@@ -17,15 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Button mulai'), 0)
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/icon akun (3)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login Object/field number inactive'), 0)
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/tab pengaturan akun (4)'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Login Object/field phone active'), '81217171662', 0)
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/tab hapus akun'), 0)
 
-Mobile.hideKeyboard()
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/button selanjutnya'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Button Lanjut verif'), 0)
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/button hapus akun'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Icon Whatsapp'), 0)
+Mobile.tap(findTestObject('Object Repository/Pengaturan Akun Object/button ya hapus'), 0)
+
+Mobile.tap(findTestObject('Pengaturan Akun Object/Button Klik untuk keluar'), 0)
 

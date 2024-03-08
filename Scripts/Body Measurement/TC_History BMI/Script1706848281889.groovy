@@ -17,15 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Button mulai'), 0)
+Mobile.tap(findTestObject('Object Repository/BMI Object/icon beranda (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login Object/field number inactive'), 0)
+Mobile.tap(findTestObject('Object Repository/BMI Object/tab BMI (1)'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Login Object/field phone active'), '81217171662', 0)
+Mobile.tap(findTestObject('Object Repository/BMI Object/Click CheckBox (1)'), 0)
 
-Mobile.hideKeyboard()
+Mobile.tap(findTestObject('Object Repository/BMI Object/Button mulai (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Button Lanjut verif'), 0)
+Mobile.tap(findTestObject('BMI Object/Tab History BMI'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login Object/Icon Whatsapp'), 0)
+Mobile.tap(findTestObject('BMI Object/Tab First History'), 0)
+
+Mobile.pressBack()
+
+Mobile.pressBack()
+
+Mobile.pressBack()
+
+Mobile.pressBack()
 
